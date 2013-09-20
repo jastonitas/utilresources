@@ -7,3 +7,13 @@ export PATH=$PATH:$JAVA_HOME/bin
 export M2_HOME=/opt/apache-maven-3.1.0
 export M2=$M2_HOME/bin
 export PATH=$M2:$PATH
+
+
+#Pentaho Notes
+Many applications refer to the xulrunner library in order to work. As its location varies from system to system, in some cases it's necessary to set it "by hand" . This is done through java options, for instance, within your java options you could include something like this:
+
+-Dorg.eclipse.swt.browser.XULRunnerPath=/usr/lib/xulrunner-2/xulrunner
+
+i.e. You need to edit your spoon.sh file to include that option, for example:
+
+OPT="$OPT $PENTAHO_DI_JAVA_OPTIONS -Djava.library.path=$LIBPATH -DKETTLE_HOME=$KETTLE_HOME -DKETTLE_REPOSITORY=$KETTLE_REPOSITORY -DKETTLE_USER=$KETTLE_USER -DKETTLE_PASSWORD=$KETTLE_PASSWORD -DKETTLE_PLUGIN_PACKAGES=$KETTLE_PLUGIN_PACKAGES -DKETTLE_LOG_SIZE_LIMIT=$KETTLE_LOG_SIZE_LIMIT    -Dorg.eclipse.swt.browser.XULRunnerPath=/usr/lib/xulrunner-2/xulrunner"

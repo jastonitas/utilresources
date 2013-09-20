@@ -1,4 +1,4 @@
-. ~/.bash_profile
+~/.bash_profile
 
 #custom variables setup
 export JAVA_HOME=/opt/java/jre1.7.0_40

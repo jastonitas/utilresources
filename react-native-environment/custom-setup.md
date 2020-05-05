@@ -10,3 +10,4 @@ On Windows
      yes | android-sdk-linux/tools/bin/sdkmanager --sdk_root=${ANDROID_HOME} --licenses
      android-sdk-linux/tools/bin/sdkmanager --sdk_root=${ANDROID_HOME} "platform-tools" "platforms;android-${ANDROID_COMPILE_SDK}" >/dev/null
      (https://android.tutorials24x7.com/blog/how-to-install-android-sdk-tools-on-ubuntu)
+

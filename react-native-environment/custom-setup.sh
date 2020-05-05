@@ -8,7 +8,7 @@ export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
 export PATH=$PATH:$JAVA_HOME/bin
 printf "\nexport JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64\nexport PATH=\$PATH:\$JAVA_HOME/bin" >> ~/.zshrc
 export ANDROID_HOME=~/android-sdk-linux
-sudo ~/android-sdk-linux/tools/bin/sdkmanager --sdk_root=${ANDROID_HOME} "platform-tools" "platforms;android-29" "build-tools;29.0.2"
+sudo ~/android-sdk-linux/tools/bin/sdkmanager --sdk_root=${ANDROID_HOME} "platform-tools" "platforms;android-28" "build-tools;28.0.3"
 export PATH=$PATH:$ANDROID_HOME/tools/bin
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 printf "\nexport ANDROID_HOME=$ANDROID_HOME\nexport PATH=\$PATH:\$ANDROID_HOME/tools/bin\nexport PATH=\$PATH:\$ANDROID_HOME/platform-tools" >> ~/.zshrc

@@ -13,6 +13,9 @@ export PATH=$PATH:$ANDROID_HOME/tools/bin
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 printf "\nexport ANDROID_HOME=$ANDROID_HOME\nexport PATH=\$PATH:\$ANDROID_HOME/tools/bin\nexport PATH=\$PATH:\$ANDROID_HOME/platform-tools" >> ~/.zshrc
 sudo chown $USER:$USER $ANDROID_HOME -R
+pushd /usr/local/bin/
+sudo ln -s ~/android-sdk-linux/platform-tools/adb
+popd
 sudo apt-get install gradle
 gradle -v
 adb start-server
